@@ -2,109 +2,53 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Muthola’ah Yuk!</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="manifest" href="manifest.json">
+  <title>Muthola'ah Yuk!</title>
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #f3f4f6;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f4f6f8;
       margin: 0;
       padding: 20px;
     }
     h1 {
       text-align: center;
-      margin-bottom: 20px;
     }
-    .menu {
+    .grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-      max-width: 500px;
-      margin: auto;
-    }
-    .item {
-      background: white;
-      border-radius: 12px;
-      padding: 16px;
-      text-align: center;
-      font-weight: 600;
-      box-shadow: 0 6px 20px rgba(0,0,0,.08);
-      cursor: pointer;
-    }
-    .item:hover {
-      background: #e5e7eb;
-    }
-    .bait {
-      display: none;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
       max-width: 600px;
       margin: auto;
+    }
+    .btn {
       background: white;
       padding: 20px;
-      border-radius: 14px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.1);
-    }
-    .arab {
-      direction: rtl;
-      font-size: 26px;
       text-align: center;
-      margin: 20px 0;
-      line-height: 1.8;
-    }
-    .arti {
-      text-align: center;
-      color: #374151;
-    }
-    button {
-      margin-top: 20px;
-      padding: 10px 16px;
-      border: none;
-      border-radius: 10px;
-      background: #111827;
-      color: white;
-      cursor: pointer;
+      border-radius: 16px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
   </style>
 </head>
 <body>
 
-<h1>📖 Muthola’ah Yuk!</h1>
+<h1>📖 Muthola'ah Yuk!</h1>
 
-<div class="menu" id="menu">
-  <div class="item" onclick="openBait()">Bait 1</div>
-  <div class="item">Bait 2</div>
-  <div class="item">Bait 3</div>
-  <div class="item">Bait 4</div>
-  <div class="item">Bait 5</div>
-  <div class="item">Bait 6</div>
-  <div class="item">Bait 7</div>
-  <div class="item">Bait 8</div>
-  <div class="item">Bait 9</div>
-  <div class="item">Bait 10</div>
+<div class="grid">
+  <a class="btn" href="bait1.html">Bait 1</a>
+  <a class="btn" href="bait2.html">Bait 2</a>
+  <a class="btn" href="bait3.html">Bait 3</a>
+  <a class="btn" href="bait4.html">Bait 4</a>
+  <a class="btn" href="bait5.html">Bait 5</a>
+  <a class="btn" href="bait6.html">Bait 6</a>
+  <a class="btn" href="bait7.html">Bait 7</a>
+  <a class="btn" href="bait8.html">Bait 8</a>
+  <a class="btn" href="bait9.html">Bait 9</a>
+  <a class="btn" href="bait10.html">Bait 10</a>
 </div>
-
-<div class="bait" id="bait1">
-  <div class="arab">
-    أَبْدَأُ بِالْحَمْدِ مُصَلِّيًا عَلَىٰ  
-    مُحَمَّدٍ خَيْرِ نَبِيٍّ أُرْسِلَا
-  </div>
-  <div class="arti">
-    Aku memulai dengan memuji Allah dan bershalawat kepada Muhammad,
-    Nabi terbaik yang diutus.
-  </div>
-  <button onclick="back()">⬅ Kembali</button>
-</div>
-
-<script>
-  function openBait() {
-    document.getElementById("menu").style.display = "none";
-    document.getElementById("bait1").style.display = "block";
-  }
-  function back() {
-    document.getElementById("bait1").style.display = "none";
-    document.getElementById("menu").style.display = "grid";
-  }
-</script>
 
 </body>
 </html>
